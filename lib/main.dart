@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import "./SimpleWheelsTitle.dart";
 import "./OrderNotice.dart";
+import "./ItemList.dart";
 
 Color backgroundColor = Color.fromRGBO(22, 149, 122, 1);
 
@@ -35,6 +36,10 @@ class Frontloops extends StatelessWidget {
                   height: 10.0,
                 ),
                 OrderNotice(),
+                SizedBox(
+                  height: 10.0,
+                ),
+                ItemList(),
               ],
             ),
           ),
