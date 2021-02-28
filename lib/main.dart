@@ -25,7 +25,14 @@ class Frontloops extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          child: SimpleWheelsTitle(),
+          child: Padding(
+            padding: const EdgeInsets.all(30.0),
+            child: Column(
+              children: [
+                SimpleWheelsTitle(),
+              ],
+            ),
+          ),
           width: 350.0,
           margin: EdgeInsets.only(
             top: 50.0,
