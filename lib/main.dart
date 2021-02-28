@@ -31,6 +31,7 @@ class Frontloops extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(30.0),
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 SimpleWheelsTitle(),
                 SizedBox(
@@ -42,6 +43,9 @@ class Frontloops extends StatelessWidget {
                 ),
                 ItemList(),
                 TotalPrice(),
+                SizedBox(
+                  height: 50.0,
+                ),
               ],
             ),
           ),
@@ -50,6 +54,12 @@ class Frontloops extends StatelessWidget {
             top: 50.0,
           ),
           decoration: BoxDecoration(
+            image: DecorationImage(
+              alignment: Alignment(0, 2),
+              image: AssetImage(
+                "./assets/images/bicycle.png",
+              ),
+            ),
             color: Colors.white,
             borderRadius: BorderRadius.circular(
               10.0,
@@ -58,8 +68,8 @@ class Frontloops extends StatelessWidget {
               BoxShadow(
                 color: Colors.black38,
                 offset: Offset(5.0, 5.0),
-                spreadRadius: 8.0,
-                blurRadius: 8.0,
+                spreadRadius: 5.0,
+                blurRadius: 5.0,
               ),
             ],
           ),
