@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
 
-Color gray = Color.fromRGBO(159, 159, 159, 0.5);
+Color alphaGray = Color.fromRGBO(159, 159, 159, 0.5);
 
 class SimpleWheelsTitle extends StatelessWidget {
   @override
@@ -22,7 +22,7 @@ class SimpleWheelsTitle extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(
-              color: gray,
+              color: alphaGray,
             ),
           ),
           child: Image.asset(
